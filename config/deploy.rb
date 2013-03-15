@@ -23,7 +23,7 @@ set :sync_directories, ["public/system"]
 set :stages, %w(staging production)
 set :default_stage, 'production'
 
-set :repository,  "git@github.com:LRDesign/dummy.git"
+set :repository,  "git@github.com:LRDesign/dummyi.git"
 # set :deploy_via, :remote_cache
 set :scm, 'git'
 # set :git_shallow_clone, 1
