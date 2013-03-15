@@ -16,17 +16,14 @@ ssh_options[:auth_methods] = %w{publickey password}
 ssh_options[:forward_agent] = true
 
 # Overwrite the default deploy start/stop/restart actions with passenger ones
-require 'config/deploy/passenger'
-require 'config/deploy/remote_sync'
 require 'bundler/capistrano'
 
 set :sync_directories, ["public/system"]
 
 set :stages, %w(staging production)
 set :default_stage, 'production'
-require 'capistrano/ext/multistage'
 
-set :repository,  "git@github.com:LRDesign/Tracks.git"
+set :repository,  "git@github.com:LRDesign/dummy.git"
 # set :deploy_via, :remote_cache
 set :scm, 'git'
 # set :git_shallow_clone, 1
