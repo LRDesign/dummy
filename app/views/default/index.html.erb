@@ -1,0 +1,10 @@
+<h1>Hey, it worked</h1>
+
+<h2>A list of entries below demonstrates successful DB query</h2>
+<ul>
+  <% @data.each do |entry| %>
+    <%= content_tag_for(:li, entry) do %>
+      <%= entry.name %>
+    <% end %>
+  <% end %>
+</ul>
